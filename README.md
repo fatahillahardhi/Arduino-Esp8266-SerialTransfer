@@ -1,4 +1,5 @@
-#SENDING MULTIPLE DATA FROM ARDUINO TO NODEMCU WITH SERIALTRANSFER
+# SENDING MULTIPLE DATA FROM ARDUINO TO NODEMCU WITH SERIALTRANSFER
+
 ngirim multiple data dengan array dari Arduino ke ESP8266 atau nodeMCU pake library SerialTransfer, ini bagi orang yang mencoba kirim multiple data pake SoftwareSerial biasa dan ArduinoJSON tapi gagal kaya gue.
 
 **DO THIS FIRST DUDEEEEEEEEEEEEEE!!!!!!!!!!**
