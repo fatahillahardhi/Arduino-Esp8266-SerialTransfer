@@ -5,7 +5,7 @@
 SoftwareSerial mySerial(D1, D2); // RX, TX
 SerialTransfer myTransfer;
 
-uint8_t data[2] = {}; //untuk nampung data array yg diterima
+uint8_t data[2] = {}; // untuk nampung data array yg diterima
 
 void setup(){
   Serial.begin(115200);
