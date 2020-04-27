@@ -7,29 +7,25 @@ SerialTransfer myTransfer;
 
 uint8_t data[2] = {}; //untuk nampung data array yg diterima
 
-void setup()
-{
+void setup(){
   Serial.begin(115200);
   mySerial.begin(9600);
   myTransfer.begin(mySerial);
 }
 
-void loop()
-{
+void loop(){
 if (myTransfer.available()){
     
     uint8_t recSize = 0;
 
     myTransfer.rxObj(data, sizeof(data), recSize);
-Serial.println();
+    Serial.println();
     Serial.print("Data 1= ");
     Serial.print(data[0]);
     Serial.println();
     Serial.print("Data 2 = ");
     Serial.print(data[1]);
-    }
-    else if (myTransfer.status < 0)
-  {
+    }else if (myTransfer.status < 0){
     Serial.print("ERROR: ");
     if (myTransfer.status == -1)
       Serial.println(F("CRC_ERROR"));
