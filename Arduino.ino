@@ -8,9 +8,9 @@ uint8_t data[2] = {10, 20}; //tes kirim 100 sama 200
 
 void setup(){
   Serial.begin(115200);
-  //kalo pake MEGA tambahin Serial2.begin(115200);
-  mySerial.begin(9600);
-  myTransfer.begin(mySerial);
+  //Serial2.begin(115200); kalo pake MEGA
+  mySerial.begin(9600); // hapus ini kalo pake MEGA
+  myTransfer.begin(mySerial); // ganti mySerial dengan Serial2 kalo pake MEGA
 }
 
 void loop(){
