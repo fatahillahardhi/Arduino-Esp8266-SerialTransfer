@@ -9,6 +9,6 @@ ngirim multiple data dengan array dari Arduino ke ESP8266 atau nodeMCU pake libr
 
 ```
 NODEMCU      ARDUINO UNO      ARDUINO MEGA         
-D1 (RX)        5 (TX)          16 (TX)
-D2 (TX)        6 (RX)          17 (RX)
+D1              6               16 
+D2              5               17 
 ```
