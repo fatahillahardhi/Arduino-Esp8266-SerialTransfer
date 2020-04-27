@@ -2,10 +2,10 @@
 #include <SoftwareSerial.h>
 
 
-SoftwareSerial mySerial(D2, D1); // RX, TX
+SoftwareSerial mySerial(D1, D2); // RX, TX
 SerialTransfer myTransfer;
 
-uint8_t count[2] = {}; //untuk nampung data array yg diterima
+uint8_t data[2] = {}; //untuk nampung data array yg diterima
 
 void setup()
 {
@@ -20,7 +20,7 @@ if (myTransfer.available()){
     
     uint8_t recSize = 0;
 
-    myTransfer.rxObj(data, sizeof(dat), recSize);
+    myTransfer.rxObj(data, sizeof(data), recSize);
 Serial.println();
     Serial.print("Data 1= ");
     Serial.print(data[0]);
